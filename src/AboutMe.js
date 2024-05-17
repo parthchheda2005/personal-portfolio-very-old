@@ -22,7 +22,7 @@ export default function AboutMe() {
         <div className="right-section">
           <div className="skills">
             <header>
-              <h2>My Skills</h2>
+              <h2>Notable Skills</h2>
             </header>
             <ul>
               <li>
@@ -34,7 +34,7 @@ export default function AboutMe() {
               </li>
               <li>
                 <img
-                  src="https://1000logos.net/wp-content/uploads/2020/09/CSS-Logo.png"
+                  src="https://cdn.iconscout.com/icon/free/png-256/free-css3-8-1175200.png?f=webp"
                   alt="CSS"
                 />
                 <p>CSS</p>
@@ -62,21 +62,10 @@ export default function AboutMe() {
               </li>
               <li>
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Rlogo.png"
-                  alt="R"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png"
+                  alt="git"
                 />
-                <p>R</p>
-              </li>
-              <li>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png"
-                  alt="Tailwind"
-                />
-                <p>Tailwind</p>
-              </li>
-              <li>
-                <img src="https://pngimg.com/d/github_PNG65.png" alt="Github" />
-                <p>Github and Git</p>
+                <p>Git</p>
               </li>
             </ul>
           </div>

@@ -23,7 +23,7 @@ body {
   background-color: rgb(205, 205, 205);
   padding: 2rem;
   color: rgb(2, 59, 2);
-  height: 600px;
+  height: auto;
 }
 
 .about-me header {
@@ -33,6 +33,11 @@ body {
   font-weight: bold;
   color: inherit;
   font-size: 50px;
+}
+
+.skills {
+  width: 100%;
+  height: auto;
 }
 
 .skills header {
@@ -46,45 +51,35 @@ body {
 .skills ul {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, auto);
-  gap: 10px;
-  list-style-type: none;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  row-gap: 20px; /* Adjust the gap between rows */
+  column-gap: 30px; /* Adjust the gap between columns */
+  width: 100%;
   padding: 0;
   margin: 0;
-  columns: 3;
 }
 
-.skills li {
-  background-color: #f0f0f0;
-  padding: 10px;
-  font-size: large;
-  border: solid #ccc;
-  position: relative;
-  display: inline-block;
-  text-align: center; /* Center the image and text horizontally */
+.skills ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 150px;
+  border: 1px solid #ccc; /* Optional: Add a border for better visualization */
 }
 
-.skills li img {
-  width: auto;
-  height: 40px;
-  display: block;
+.skills ul li img {
+  max-width: 50%; /* Ensure image is responsive */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Space between image and text */
 }
 
-.skills li p {
-  display: none;
-  position: absolute;
-  /* top: 100%; Position the <p> exactly below the image */
-  left: 50%;
-  transform: translateX(0%); /* Center the text horizontally */
-  transform: translateY(-170%);
-  padding: 5px; /* Optional: padding for better visibility */
-  white-space: nowrap; /* Prevent text wrapping */
-  z-index: 1; /* Ensure the text appears above other elements if necessary */
-}
-
-.skills li:hover p {
-  display: block;
+.skills li:hover {
+  background-color: rgb(253, 246, 236);
+  height: 110%;
+  font-weight: 1000;
 }
 
 .split-container {
@@ -101,9 +96,9 @@ body {
 }
 
 .right-section {
-  padding: 1.3rem;
-  padding-top: 0.7rem;
   width: 50%;
+  padding: 1rem;
+  padding-top: 0.2rem;
 }
 
 .nav {
@@ -141,4 +136,32 @@ body {
 
 .nav li:hover {
   background-color: rgb(2, 166, 2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .split-container {
+    flex-direction: column;
+  }
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+  .skills ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skills ul li img {
+    width: 20%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills ul {
+    grid-template-columns: 1fr;
+  }
+  .skills ul li img {
+    width: 20%;
+    height: auto;
+  }
 }
