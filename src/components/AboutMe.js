@@ -1,28 +1,31 @@
 import React from "react";
-import "./images/javalogo.png";
 
 export default function AboutMe() {
   return (
     <div className="about-me">
-      <header>About Me</header>
+      <header>
+        <h1>About Me</h1>
+      </header>
       <div className="split-container">
         <div className="left-section">
           <p>
-            Hello! My name is Parth, and I am a sophmore Computer Science
+            {"  "}Hello! My name is Parth, and I am a sophmore Computer Science
             student at the University of British Columbia. I loved coding since
             the moment I picked it up in highschool. I enjoy solving complex
-            problems since it enables me to learn and grow as a programmer. I am
-            proficient in React, HTML, CSS, Javascript, Java and R. I am eager
-            to apply my knowledge and creativity to contribute to dynamic
-            projects and collaborate with like-minded professionals, and excited
-            to take the next step in my journey to become a proficient developer
-            and make a positive impact in the tech industry.
+            problems since it enables me to learn and grow as a programmer.{" "}
+            <br />
+            <br />
+            {"  "}I am proficient in React, HTML, CSS, Javascript, Java and R. I
+            am eager to apply my knowledge and creativity to contribute to
+            dynamic projects and collaborate with like-minded professionals, and
+            excited to take the next step in my journey to become a proficient
+            developer and make a positive impact in the tech industry.
           </p>
         </div>
         <div className="right-section">
           <div className="skills">
             <header>
-              <h2>Notable Skills</h2>
+              <h2 style={{ color: "#000000" }}>Notable Skills</h2>
             </header>
             <ul>
               <li>

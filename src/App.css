@@ -8,11 +8,20 @@ body {
 }
 
 .intro {
-  background-color: rgb(139, 132, 124);
+  background-color: rgb(169, 175, 175); /* rgb(139, 132, 124) */
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 625px;
+  height: 150px;
+  font-size: auto;
+}
+
+.intro h1 {
+  font-size: 50px;
+}
+
+.intro h2 {
+  font-size: 30px;
 }
 
 .intro header {
@@ -21,8 +30,7 @@ body {
 
 .about-me {
   background-color: rgb(205, 205, 205);
-  padding: 2rem;
-  color: rgb(2, 59, 2);
+  padding: 1rem;
   height: auto;
 }
 
@@ -32,7 +40,12 @@ body {
   align-items: center;
   font-weight: bold;
   color: inherit;
-  font-size: 50px;
+  /* font-size: 50px; */
+  color: rgb(10, 2, 80);
+}
+
+h1 {
+  font-size: 45px;
 }
 
 .skills {
@@ -90,8 +103,8 @@ body {
 .left-section {
   width: 50%;
   padding: 1.3rem;
-  padding-top: 5rem;
-  font-size: 24px;
+  padding-top: 3rem;
+  font-size: 23px;
   text-align: left;
 }
 
@@ -102,13 +115,18 @@ body {
 }
 
 .nav {
-  background-color: rgb(2, 59, 2);
+  background-color: rgb(10, 2, 80); /* rgb(10, 2, 80); rgb(2, 59, 2)*/
   color: rgb(249, 247, 248);
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
   padding: 0 1rem;
+}
+
+.sticky-nav {
+  position: fixed;
+  width: 100%;
 }
 
 .nav ul {
@@ -131,15 +149,24 @@ body {
 }
 
 .nav li:active {
-  background-color: rgb(82, 251, 82);
+  background-color: rgb(82, 158, 251);
 }
 
 .nav li:hover {
-  background-color: rgb(2, 166, 2);
+  background-color: rgb(82, 158, 251);
+}
+
+.projects {
+  background-color: rgb(169, 175, 175);
+  padding: 1rem;
+  height: auto;
 }
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
+  .intro {
+    flex-direction: column;
+  }
   .split-container {
     flex-direction: column;
   }
@@ -163,5 +190,16 @@ body {
   .skills ul li img {
     width: 20%;
     height: auto;
+  }
+  .intro {
+    flex-direction: column;
+    height: 100%;
+  }
+  .nav {
+    width: 100%;
+    font-size: 90%;
+  }
+  .site-title {
+    font-size: 1.5rem;
   }
 }
