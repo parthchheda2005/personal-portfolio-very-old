@@ -64,8 +64,16 @@ export default function Projects() {
 }
 
 function ProjectCard({ projectName, githubRepo, description, img, style }) {
+  function redirectToRepo() {
+    window.open(githubRepo, "_blank");
+  }
+
   return (
-    <div className="card">
+    <div
+      className="card"
+      onClick={redirectToRepo}
+      style={{ cursor: "pointer" }}
+    >
       <img style={style} src={img} alt={projectName} />
       <h4>{projectName}</h4>
       <p>{description}</p>

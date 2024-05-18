@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: "Verdana", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -8,12 +8,19 @@ body {
 }
 
 .intro {
-  background-color: rgb(169, 175, 175); /* rgb(139, 132, 124) */
+  /* background-color: rgb(169, 175, 175); */
+  background-image: linear-gradient(
+      to top,
+      rgba(173, 216, 230, 0.52),
+      rgba(0, 0, 139, 0.73)
+    ),
+    url("https://wallpapercave.com/wp/wp10285650.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150px;
+  min-height: 700px;
   font-size: auto;
+  height: fit-content;
 }
 
 .intro h1 {
@@ -29,9 +36,10 @@ body {
 }
 
 .about-me {
-  background-color: rgb(205, 205, 205);
+  background-color: rgb(249, 247, 248);
   padding: 1rem;
   height: auto;
+  color: rgb(0, 0, 139);
 }
 
 .about-me header {
@@ -40,11 +48,10 @@ body {
   align-items: center;
   font-weight: bold;
   color: inherit;
-  color: rgb(10, 2, 80);
 }
 
 h1 {
-  font-size: 45px;
+  font-size: 35px;
 }
 
 .skills {
@@ -79,7 +86,6 @@ h1 {
   align-items: center;
   text-align: center;
   height: 150px;
-  border: 1px solid #ccc; /* Optional: Add a border for better visualization */
 }
 
 .skills ul li img {
@@ -89,7 +95,6 @@ h1 {
 }
 
 .skills li:hover {
-  background-color: rgb(253, 246, 236);
   height: 110%;
   font-weight: 1000;
 }
@@ -103,7 +108,7 @@ h1 {
   width: 50%;
   padding: 1.3rem;
   padding-top: 3rem;
-  font-size: 23px;
+  font-size: 20px;
   text-align: left;
 }
 
@@ -114,20 +119,20 @@ h1 {
 }
 
 .nav {
-  background-color: rgb(10, 2, 80); /* rgb(10, 2, 80); rgb(2, 59, 2)*/
+  background-color: rgb(10, 2, 80); /* rgb(10, 2, 80); rgb(2, 59, 2) */
   color: rgb(249, 247, 248);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 50px;
   gap: 2rem;
   padding: 0 1rem;
+  box-shadow: 2px 2px 2px 2px #303030;
 }
 
 .sticky-nav {
   position: fixed;
   width: 100%;
-  height: 50px;
 }
 
 .nav ul {
@@ -158,15 +163,15 @@ h1 {
 }
 
 .projects {
-  background-color: rgb(169, 175, 175);
+  background-color: rgb(0, 0, 97);
   padding: 1rem;
   height: auto;
+  color: rgb(249, 247, 248);
 }
 
 .projects header {
   display: flex;
   justify-content: center;
-  color: rgb(10, 2, 80);
 }
 
 .project-list ul {
@@ -176,16 +181,10 @@ h1 {
   grid-template-rows: auto;
 }
 
-.card h4 {
-  color: rgb(10, 2, 80);
-}
-
-.project-list ul li p {
-  width: 60%;
-}
-
 .card {
-  margin: 2px;
+  margin: 5%;
+  height: fit-content;
+  width: 70%;
 }
 
 .card img {
@@ -194,7 +193,7 @@ h1 {
 }
 
 .contact-me {
-  background-color: rgb(205, 205, 205);
+  background-color: rgb(249, 247, 248);
   width: 100%;
   height: auto;
 }
@@ -202,7 +201,7 @@ h1 {
 .contact-me header {
   display: flex;
   justify-content: center;
-  color: rgb(10, 2, 80);
+  color: rgb(0, 0, 139);
 }
 
 .contacts-list {
@@ -222,9 +221,6 @@ h1 {
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
-  .intro {
-    flex-direction: column;
-  }
   .split-container {
     flex-direction: column;
   }
@@ -242,12 +238,19 @@ h1 {
 }
 
 @media (max-width: 768px) {
+  .nav {
+    height: fit-content;
+    width: fit-content;
+  }
   .skills ul {
     grid-template-columns: 1fr;
   }
   .skills ul li img {
     width: 20%;
     height: auto;
+  }
+  .project-list ul {
+    grid-template-columns: 1fr;
   }
   .intro {
     flex-direction: column;

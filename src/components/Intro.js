@@ -17,8 +17,7 @@ export default function Intro() {
       <div className="intro">
         <header>
           <h1 style={{ fontWeight: "bold", textAlign: "center" }}>
-            Hi, I am <span style={{ color: "#0A0250" }}>Parth Chheda</span>{" "}
-            {/* #0A0250  #005D00*/}
+            Hi, I am Parth Chheda {/* #0A0250  #005D00*/}
           </h1>
           <h2
             style={{
@@ -27,8 +26,7 @@ export default function Intro() {
               fontSize: "30px",
             }}
           >
-            I am <span style={{ color: "#0A0250" }}>{text}</span>{" "}
-            <Cursor cursorStyle="<" cursorColor="#000000" />{" "}
+            I am {text} <Cursor cursorStyle="<" cursorColor="#FFFFFF" />{" "}
             {/* 8B4000 000000 */}
           </h2>
         </header>
