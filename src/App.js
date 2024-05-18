@@ -3,6 +3,7 @@ import Intro from "./components/Intro.js";
 import Navbar from "./components/Navbar.js";
 import AboutMe from "./components/AboutMe.js";
 import Projects from "./components/Projects.js";
+import ContactMe from "./components/ContactMe.js";
 import { useState, useEffect } from "react";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       <Intro />
       <AboutMe />
       <Projects />
+      <ContactMe />
     </div>
   );
 }
