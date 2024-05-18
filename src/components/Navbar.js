@@ -20,18 +20,18 @@ export default function Navbar() {
 
   return (
     <nav className={`nav ${stickyClass}`}>
-      <a href="/" className="site-title">
+      <a href="#home" className="site-title">
         Parth Chheda
       </a>
       <ul>
         <li>
-          <a href="/AboutMe">About Me</a>
+          <a href="#aboutme">About Me</a>
         </li>
         <li>
-          <a href="/Projects">Projects</a>
+          <a href="#projects">Projects</a>
         </li>
         <li>
-          <a href="/Contact">Contact Me</a>
+          <a href="#contactme">Contact Me</a>
         </li>
       </ul>
     </nav>

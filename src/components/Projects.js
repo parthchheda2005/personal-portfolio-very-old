@@ -37,27 +37,29 @@ const myProjects = [
 
 export default function Projects() {
   return (
-    <div className="projects">
-      <header>
-        <h1>Projects</h1>
-      </header>
-      <div className="project-list">
-        <ul>
-          {myProjects.map((p, acc) => (
-            <li>
-              <ProjectCard
-                projectName={p.projectName}
-                img={p.img}
-                githubRepo={p.githubRepo}
-                description={p.description}
-                key={acc + 1}
-                style={p.style || {}}
-              />
-            </li>
-          ))}
-        </ul>
+    <section id="projects">
+      <div className="projects">
+        <header>
+          <h1>Projects</h1>
+        </header>
+        <div className="project-list">
+          <ul>
+            {myProjects.map((p, acc) => (
+              <li>
+                <ProjectCard
+                  projectName={p.projectName}
+                  img={p.img}
+                  githubRepo={p.githubRepo}
+                  description={p.description}
+                  key={acc + 1}
+                  style={p.style || {}}
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 
