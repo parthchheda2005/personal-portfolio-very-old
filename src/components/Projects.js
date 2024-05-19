@@ -8,14 +8,16 @@ const myProjects = [
   {
     projectName: "My Coding Portfolio",
     githubRepo: "https://github.com/parthchheda2005/personal-website",
-    description: "Made a portfolio for my coding projects in React and CSS.",
+    description:
+      "Made a portfolio for my coding projects in React and CSS. Used this as an opportunity to learn about CSS classes and developing responsive UIs to work on all screens. Also used this as an opportunity to gain a deeper understanding of JSX, rendering arrays and some practice on state.",
     img: Portfolio,
   },
   {
     projectName: "Heart Disease Predictor",
-    githubRepo: "https://github.com/parthchheda2005/dsci-100-project",
+    githubRepo:
+      "https://github.com/parthchheda2005/dsci-100-project/blob/main/heart_disease_report.ipynb",
     description:
-      "Made a Heart Disease Predictor in R using a dataset on Kaggle called Heart Disease Dataset by David Lapp. The system had an accuracy and recall of roughly 70%.",
+      "Made a Heart Disease Predictor in R using the K-Nearest Neighbors algorithm using a dataset on Kaggle called Heart Disease Dataset by David Lapp. The system had an accuracy and recall of roughly 70%.",
     img: DSCI,
     style: { height: "10%" },
   },
@@ -23,7 +25,7 @@ const myProjects = [
     projectName: "Cash Split Website",
     githubRepo: "https://github.com/parthchheda2005/bill-splitter",
     description:
-      "Made a website to split bills with friends in React, based on who paid for the meal and how much each person spent. Keeps record of who owes who what, and the amount of friends on the app.",
+      "Made a website to split bills with friends in React, based on who paid for the meal and how much each person spent. Keeps record of who owes who what, and the amount of friends on the app. Quantity of friends and amount owed is mantained through state.",
     img: BillSpliter,
   },
   {
