@@ -1,5 +1,6 @@
 import React from "react";
 import BillSpliter from "./project-images/bill-splitter-image.png";
+import MovieSS from "./project-images/movie-app-ss.png";
 import CoursePlanner from "./project-images/course-planner.png";
 import DSCI from "./project-images/dsci-img-v2.png";
 import Portfolio from "./project-images/personal-portfolio-img.png";
@@ -22,11 +23,11 @@ const myProjects = [
     style: { height: "10%" },
   },
   {
-    projectName: "Cash Split Website",
-    githubRepo: "https://github.com/parthchheda2005/bill-splitter",
+    projectName: "Movie Database",
+    githubRepo: "https://github.com/parthchheda2005/movie-list",
     description:
-      "Made a website to split bills with friends in React, based on who paid for the meal and how much each person spent. Keeps record of who owes who what, and the amount of friends on the app. Quantity of friends and amount owed is mantained through state.",
-    img: BillSpliter,
+      "Made an IMDb-like movie database using React and CSS. Did so by connecting to the TMDB API. The database displays popular movies, and enables search for movies by name. You can also rate and review movies, and see the movies that you have rated.",
+    img: MovieSS,
   },
   {
     projectName: "Course Planner",
