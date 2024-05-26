@@ -26,7 +26,7 @@ const myProjects = [
     projectName: "Movie Database",
     githubRepo: "https://github.com/parthchheda2005/movie-list",
     description:
-      "Made an IMDb-like movie database using React and CSS. Did so by connecting to the TMDB API. The database displays popular movies, and enables search for movies by name. You can also rate and review movies, and see the movies that you have rated.",
+      "Made an IMDb-like movie database using React and CSS. Did so by connecting to the TMDB API. The database displays popular movies, and enables search for movies by name. You can also rate and review movies, and see the movies that you have rated, which is stored locally.",
     img: MovieSS,
   },
   {
