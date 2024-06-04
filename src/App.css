@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 body {
@@ -14,7 +17,8 @@ body {
       rgba(173, 216, 230, 0.52),
       rgba(0, 0, 139, 0.73)
     ),
-    url("https://wallpapercave.com/wp/wp10285650.jpg");
+    url("./components/project-images/ubcwallpaper.jpeg");
+  background-size: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,7 +99,6 @@ h1 {
 }
 
 .skills li:hover {
-  height: 110%;
   font-weight: 1000;
 }
 
@@ -139,6 +142,8 @@ h1 {
   list-style: none;
   display: flex;
   gap: 1rem;
+  justify-content: space-between;
+  margin: 2%;
 }
 
 .site-title {
@@ -220,6 +225,12 @@ h1 {
 }
 
 /* Responsive adjustments */
+@media (max-width: 1200px) {
+  .intro {
+    background-size: cover;
+  }
+}
+
 @media (max-width: 1024px) {
   .split-container {
     flex-direction: column;
